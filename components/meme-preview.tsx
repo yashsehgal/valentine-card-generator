@@ -43,9 +43,9 @@ export default function CardPreview() {
   };
 
 
-  return <div className="flex flex-col items-end gap-6">
+  return <div className="flex flex-col max-lg:grid items-end gap-6">
     <div className="meme-preview">
-      <div className={cn("preview w-[500px] h-[500px] overflow-hidden shadow-lg rounded-xl relative cursor-default select-none flex flex-col items-center justify-end p-12 text-center")}
+      <div className={cn("preview w-[500px] h-[500px] max-lg:w-full shadow-lg rounded-xl relative cursor-default select-none flex flex-col items-center justify-end p-12 text-center")}
         ref={divRef}
         style={{
           backgroundImage: `url('/${template.meme}')`,

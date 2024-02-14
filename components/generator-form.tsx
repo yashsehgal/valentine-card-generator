@@ -46,7 +46,7 @@ export default function GeneratorForm() {
       />
       <div className="pre-designed-greetings-wrapper flex flex-row items-center justify-start gap-2">
         {GreetingOptions.map((greeting, index) => {
-          return <button className={cn("px-3 py-1.5 text-sm font-medium border border-gray-200 shadow-sm rounded-lg hover:bg-gray-100")} key={index}
+          return <button className={cn("truncate px-3 py-1.5 text-sm font-medium border border-gray-200 shadow-sm rounded-lg hover:bg-gray-100")} key={index}
             onClick={() => setTemplate({
               ...template,
               message: greeting
